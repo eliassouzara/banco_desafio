@@ -3,6 +3,8 @@ import java.util.Scanner;
 public class App {
     public static void main(String[] args)  {
 
+
+
     String nome = "igor";
     String tipoConta = "Corrente";
     double saldo = 154.21;
@@ -35,12 +37,13 @@ Scanner leitura = new Scanner(System.in);
         } else if  (opcao == 2) {
             System.out.println("Qual valor deseja traferir?");
             double valorNovoNegativo = leitura.nextDouble();
+            
             if (valorNovoNegativo > saldo) {
-                System.out.println("Não há saldo para realizar a transferencia");
+                System.out.println("Não há saldo para realizar a transferência");
 
             } else {
                 saldo -= valorNovoNegativo;
-                System.out.println("Novo  saldo: " + saldo);
+                System.out.println("Novo saldo: " + saldo);
             }
           
 
@@ -55,7 +58,7 @@ Scanner leitura = new Scanner(System.in);
         } else if (opcao == 4) {
             
         } else {
-            System.out.println("Opeção invalida");
+            System.out.println("Opção invalida");
         }
     }
    
